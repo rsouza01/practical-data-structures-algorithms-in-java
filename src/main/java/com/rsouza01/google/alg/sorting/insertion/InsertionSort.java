@@ -4,7 +4,7 @@ public class InsertionSort {
 
     public static int[] sort(int[] array) {
         
-        for(int i = 1; i < array.length - 1; i++) {
+        for(int i = 1; i < array.length ; i++) {
             int element = array[i];
             int j = i - 1;
             while(j >= 0 && array[j] > element ) {
