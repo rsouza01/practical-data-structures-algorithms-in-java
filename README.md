@@ -10,6 +10,7 @@
 
 java -cp target/practical-data-structures-algorithms-in-java-1.0-SNAPSHOT.jar com.rsouza01.google.adt.App
 
+java -cp target/practical-data-structures-algorithms-in-java-1.0-SNAPSHOT.jar com.rsouza01.google.alg.sorting.insertion.App
 
 # REFERENCES
 
