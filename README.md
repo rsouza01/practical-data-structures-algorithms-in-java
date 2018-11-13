@@ -12,6 +12,8 @@ java -cp target/practical-data-structures-algorithms-in-java-1.0-SNAPSHOT.jar co
 
 java -cp target/practical-data-structures-algorithms-in-java-1.0-SNAPSHOT.jar com.rsouza01.google.alg.sorting.insertion.App
 
+java -cp target/practical-data-structures-algorithms-in-java-1.0-SNAPSHOT.jar com.rsouza01.google.alg.sorting.merge.App
+
 # REFERENCES
 
 https://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/
