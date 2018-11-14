@@ -7,40 +7,7 @@
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "com.rsouza01.google.alg.sorting.selection.App",
-            "args": "",
-            "projectName": "practical-data-structures-algorithms-in-java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.rsouza01.google.alg.linearsearch.App",
-            "args": "",
-            "projectName": "practical-data-structures-algorithms-in-java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.rsouza01.google.circularlinkedlist.App",
-            "args": "",
-            "projectName": "practical-data-structures-algorithms-in-java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.rsouza01.google.stack.App",
+            "mainClass": "com.rsouza01.google.alg.sorting.merge.App",
             "args": "",
             "projectName": "practical-data-structures-algorithms-in-java"
         }

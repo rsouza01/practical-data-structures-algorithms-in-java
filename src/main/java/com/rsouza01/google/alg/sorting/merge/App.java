@@ -9,6 +9,7 @@ public class App {
 		System.out.println("Merge sorting.");
 		
 		int[] array = new int[] {9, 7, 3, 1, 6, 3, 2, 6, 8, 9, 2, 3, 0};
+		//int[] array = new int[] {9, 7, 3, 1};
 
 		MergeSort.sort(array);
 
