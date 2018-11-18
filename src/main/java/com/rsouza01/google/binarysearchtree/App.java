@@ -15,6 +15,7 @@ public class App {
 		//System.out.println("Min = " + bst.findMin().key);
 		//System.out.println("Max = " + bst.findMax().key);
 
+		/*
 		Node deleted = bst.delete(2);
 		if(deleted != null) {
 			System.out.println("Deleted = " + deleted.key);
@@ -26,5 +27,8 @@ public class App {
 
 		bst.delete(85);
 		System.out.println("Max = " + bst.findMax().key);
+		*/
+		
+		System.out.println(bst.toString());
 	}
 }

@@ -1,5 +1,8 @@
 package com.rsouza01.google.binarysearchtree;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class BinarySearchTree {
 
     private Node root = null;
@@ -145,5 +148,62 @@ public class BinarySearchTree {
         }
 
         return successor;
+    }
+
+    public String toString() {
+
+        if(root == null) return "";
+
+        StringBuilder strBuilder = new StringBuilder();
+
+        /*
+                    50
+            2               85
+                5
+                    12
+        */
+        
+        boolean hasNodes = true;
+     
+        int level = 0;
+
+        List<Node> listNodes = new ArrayList<Node>();
+
+        listNodes.add(root);
+     
+        while(hasNodes) {
+            
+            List<Node> listChildren = new ArrayList<Node>();
+            
+            hasNodes = false;
+     
+            strBuilder.append(level + "    :");
+            for(Node node: listNodes) {
+
+                strBuilder.append(node.toString() + "     ");
+
+                if(node.leftChild != null) {
+                    hasNodes = true;
+                    listChildren.add(node.leftChild);
+                } else {
+                    listChildren.add(new Node());
+                }
+
+                if(node.rightChild != null) {
+                    hasNodes = true;
+                    listChildren.add(node.rightChild);
+                } else {
+                    listChildren.add(new Node());
+                }
+            }
+
+            listNodes = listChildren;
+            listChildren = new ArrayList<Node>();
+            level++;
+            strBuilder.append("\n");
+
+        }
+
+        return strBuilder.toString();
     }
 }
