@@ -154,6 +154,69 @@ public class BinarySearchTree {
 
         if(root == null) return "";
 
+        boolean hasNodes = true;
+     
+        List<List<Node>> listLevels = new ArrayList<List<Node>>();
+
+        List<Node> listCurrentLevel = new ArrayList<Node>();
+
+        listCurrentLevel.add(root);
+
+        while(hasNodes) {
+
+            List<Node> listNextLevel = new ArrayList<Node>();
+
+            hasNodes = false;
+     
+            for(Node node: listCurrentLevel) {
+
+                if(node.leftChild != null) {
+                    hasNodes = true;
+                    listNextLevel.add(node.leftChild);
+                } else {
+                    listNextLevel.add(new Node());
+                }
+
+                if(node.rightChild != null) {
+                    hasNodes = true;
+                    listNextLevel.add(node.rightChild);
+                } else {
+                    listNextLevel.add(new Node());
+                }
+            }
+            listLevels.add(listCurrentLevel);
+
+            listCurrentLevel = listNextLevel;
+        }
+
+        StringBuilder strBuilder = new StringBuilder();
+        
+        int totalLevels = listLevels.size();
+        int bottomElements = (int)Math.pow(2, totalLevels - 1);
+        
+        strBuilder.append("totalLevels = " + totalLevels+ "\n");
+        strBuilder.append("bottomElements = " + bottomElements+ "\n");
+
+
+        /*
+        x----x____x----x____x----x____x----x
+        */
+        int levelCount = 0;
+        for(List<Node> level: listLevels) {
+            for(Node node: level) {
+                int totalSpaces = bottomElements/2;
+                strBuilder.append(node.toString() + "    ");
+            }
+            levelCount++;
+            strBuilder.append("\n");
+        }
+
+        return strBuilder.toString();
+    }
+    public String _toString() {
+
+        if(root == null) return "";
+
         StringBuilder strBuilder = new StringBuilder();
 
         /*
