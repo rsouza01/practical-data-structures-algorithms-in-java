@@ -1,7 +1,5 @@
 package com.rsouza01.google.hashtable;
 
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
 public class HashTable {
 
     String[] hashArray;
